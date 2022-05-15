@@ -9,22 +9,22 @@
 // 3) Write a multiline comment which says, comments can make code readable, easy to reuse and informative
 
 /* 
-let firstName = Ahmadjon
-let lastName = Xasanov
-let age = 25
-let country = Uzbekiston
-let city = Urgench
+let firstName = 'My firstname is Akhmadjon.';
+let lastName = 'My lastname is Khasanov.';
+let maritalStatus = 'I am not married.';
+let country = 'I am from Uzbekistan.';
+let age = 'I am 25.';
 */
 
 // 4) Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
 
-let a = 1
-let b = 0
-let c = true
-let d = false
-let e = 3.14
-let f = 'tim'
-let g = '3'
+let a = 1;
+let b = 0;
+let c = true;
+let d = false;
+let e = 3.14;
+let f = 'tim';
+let g = '3';
 console.log(a + d);
 console.log(a * b);
 
@@ -59,18 +59,18 @@ console.log(b - f);
 
 // 7) Declare four variables with assigned values
 
-console.log(a + g);
-console.log(g + f);
-console.log(g - d);
-console.log(b / a);
+let textError;
+let changeElements;
+let wirteComments;
+let useElements;
 
 // 8) Declare variables to store your first name, last name, marital status, country and age in multiple lines
 
-let firstName = 'Akhmadjon'
-let lastName = 'Khasanov'
-let maritalStatus = 'juda yaxshi'
-let country = 'Uzbekistan'
-let age = '25 years old'
+let firstName = 'My firstname is Akhmadjon.';
+let lastName = 'My lastname is Khasanov.';
+let maritalStatus = 'I am not married.';
+let country = 'I am from Uzbekistan.';
+let age = 'I am 25.';
 
 console.log('firstName = ' + firstName);
 console.log('lastName = ' + lastName);
@@ -84,8 +84,8 @@ console.log(firstName + ' ' + lastName + ' ' + maritalStatus + ' ' + country + '
 
 // 10) Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
 
-let myAge = 'I am 25 years old'
-let yourAge = 'You are 23 years old'
+let myAge = 'I am 25 years old.';
+let yourAge = 'You are 23 years old.';
 
 console.log(myAge);
 console.log(yourAge);
