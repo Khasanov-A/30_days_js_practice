@@ -25,6 +25,7 @@ let d = false;
 let e = 3.14;
 let f = 'tim';
 let g = '3';
+
 console.log(a + d);
 console.log(a * b);
 
@@ -52,17 +53,17 @@ console.log(typeof(g / f));
 
 // 6) Declare four variables without assigning values
 
-console.log(a / f);
-console.log(g / f);
-console.log(g * f);
-console.log(b - f);
-
-// 7) Declare four variables with assigned values
-
 let textError;
 let changeElements;
 let wirteComments;
 let useElements;
+
+// 7) Declare four variables with assigned values
+
+let textErrors = 'error';
+let changeElement = 'b';
+let wirteComment = 'a';
+let useElement = 'c';
 
 // 8) Declare variables to store your first name, last name, marital status, country and age in multiple lines
 
