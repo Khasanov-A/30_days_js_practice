@@ -73,15 +73,9 @@ let maritalStatus = 'I am not married.';
 let country = 'I am from Uzbekistan.';
 let age = 'I am 25.';
 
-console.log('firstName = ' + firstName);
-console.log('lastName = ' + lastName);
-console.log('maritalStatus = ' + maritalStatus);
-console.log('country = ' + country);
-console.log('age = ' + age);
-
 // 9) Declare variables to store your first name, last name, marital status, country and age in a single line
 
-console.log(firstName + ' ' + lastName + ' ' + maritalStatus + ' ' + country + ' ' + age);
+let firstNames, lastNames, maritalStatuss, countries, ages;
 
 // 10) Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
 
