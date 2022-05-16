@@ -65,18 +65,18 @@ console.log(string.substr(4, 5));
 
 
 
-let string = '30 Days Of JavaScript'
+let stringa = '30 Days Of JavaScript'
 
-console.log(string.indexOf('D')) // 3
-console.log(string.indexOf('Days')) // 3
-console.log(string.indexOf('days')) // -1
-console.log(string.indexOf('a')) // 4
-console.log(string.indexOf('JavaScript')) // 11
-console.log(string.indexOf('Script')) //15
-console.log(string.indexOf('script')) // -1
+console.log(stringa.indexOf('D')) // 3
+console.log(stringa.indexOf('Days')) // 3
+console.log(stringa.indexOf('days')) // -1
+console.log(stringa.indexOf('a')) // 4
+console.log(stringa.indexOf('JavaScript')) // 11
+console.log(stringa.indexOf('Script')) //15
+console.log(stringa.indexOf('script')) // -1
 
 
 
-let string = 'I Love JavaScript. If you do not love JavaScript what else can you love.'
-console.log(string.search('love')) // 2
-console.log(string.search(/javascript/g)) // 7
+let strings = 'I Love JavaScript. If you do not love JavaScript what else can you love.'
+console.log(strings.search('love')) // 2
+console.log(strings.search(/javascript/g)) // 7
