@@ -1,13 +1,13 @@
-// let numOne = 3;
-// let numTwo = 3;
-// let js = 'JavaScript';
-// let py = 'Python';
-// let lightOn = true;
-// let lightOff = false;
+let numOne = 3;
+let numTwo = 3;
+let js = 'JavaScript';
+let py = 'Python';
+let lightOn = true;
+let lightOff = false;
 
-// console.log(numOne == numTwo);
-// console.log(js == py);
-// console.log(lightOn == lightOff);
+console.log(numOne == numTwo);
+console.log(js == py);
+console.log(lightOn == lightOff);
 
 
 // array malumotlarni indexga boshlob boradi, console.log(nums[0]).
@@ -23,7 +23,7 @@
 
 
 // Non-Primitive Data Types (Ibtidoiy bo'lmagan ma'lumotlar turlari)
-/*
+
 let nums = [1, 2, 3]; // Array turi
 nums[0] = 10;
 nums[1] = 11;
@@ -54,26 +54,26 @@ let userTwo = {
 }
 
 console.log(userOne == userTwo) // false
-*/
-
-// let a = 2
-// let b = 3
-// console.log(`The sum of ${a} and ${b} is ${a + b}`)
-
-// let string = 'JavaScript';
-// console.log(string.substr(4, 5));
 
 
+let a = 2
+let b = 3
+console.log(`The sum of ${a} and ${b} is ${a + b}`)
 
-// let string = '30 Days Of JavaScript'
+let string = 'JavaScript';
+console.log(string.substr(4, 5));
 
-// console.log(string.indexOf('D')) // 3
-// console.log(string.indexOf('Days')) // 3
-// console.log(string.indexOf('days')) // -1
-// console.log(string.indexOf('a')) // 4
-// console.log(string.indexOf('JavaScript')) // 11
-// console.log(string.indexOf('Script')) //15
-// console.log(string.indexOf('script')) // -1
+
+
+let string = '30 Days Of JavaScript'
+
+console.log(string.indexOf('D')) // 3
+console.log(string.indexOf('Days')) // 3
+console.log(string.indexOf('days')) // -1
+console.log(string.indexOf('a')) // 4
+console.log(string.indexOf('JavaScript')) // 11
+console.log(string.indexOf('Script')) //15
+console.log(string.indexOf('script')) // -1
 
 
 
