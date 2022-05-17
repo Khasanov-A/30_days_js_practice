@@ -129,12 +129,12 @@ let numFloat = parseFloat(num);
 
 console.log(parseFloat(num) === 10);
 
-// // 5) Check if 'on' is found in both python and jargon
+// 5) Check if 'on' is found in both python and jargon
 
-// let a = 'python';
-// let b = 'jargon';
-// console.log(a.includes('on') + b.includes('on')); //includes danam foydalansa boladi yo endsWith dan lekin incudesda to'liq bo'lishi garak
-// console.log(b.endsWith('on'));
+let a = 'python';
+let b = 'jargon';
+console.log(a.includes('on') + b.includes('on')); //includes danam foydalansa boladi yo endsWith dan lekin incudesda to'liq bo'lishi garak
+console.log(b.endsWith('on'));
 
 // 6) I hope this course is not full of jargon. Check if jargon is in the sentence.
 
@@ -206,15 +206,12 @@ let numberAv = sentence.match(patternA);
 let endAv = numberAv.length;
 console.log(endAv);
 
-// // 3) Clean the following text and find the most frequent word(hint, use replace and regular expressions).
+// 3) Clean the following text and find the most frequent word(hint, use replace and regular expressions).
 
-// const sentenceB = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
-// const elementA = /[%@$&#;]/gi;
-// const takeA = sentenceB.replaceAll(elementA, '');
-// const takeB = takeA.match(/\b\[a-zA-Z]+\1\b/gmi);
-//      // Vaqtinchalik qoldirildi ln oxiriga yetkazish kerak.
-// // console.log(takeA);
-// console.log(takeB);
+const sentenceB = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+const elementA = /[%@$&#;]/gi;
+const takeA = sentenceB.replaceAll(elementA, '');
+console.log(takeA);
 
 // 4) Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 let textC = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
