@@ -120,26 +120,30 @@ console.log("Love is not patronizing and charity isn't about pity, it is about l
 
 // 3) Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
 
-console.log(typeof('10' == 10));
+console.log((typeof('10')) == (typeof 10));
 
 // 4) Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
 
 let num = '9.8';
 let numFloat = parseFloat(num);
 
-console.log(typeof(numFloat == 10));
+console.log(parseFloat(num) === 10);
 
-// 5) Check if 'on' is found in both python and jargon
+// // 5) Check if 'on' is found in both python and jargon
 
-let a = 'python';
-let b = 'jargon';
-console.log(a.includes('on') + b.includes('on')); //includes danam foydalansa boladi yo endsWith dan lekin incudesda to'liq bo'lishi garak
-console.log(b.endsWith('on'));
+// let a = 'python';
+// let b = 'jargon';
+// console.log(a.includes('on') + b.includes('on')); //includes danam foydalansa boladi yo endsWith dan lekin incudesda to'liq bo'lishi garak
+// console.log(b.endsWith('on'));
 
 // 6) I hope this course is not full of jargon. Check if jargon is in the sentence.
 
 let textA = 'I hope this course is not full of jargon.';
 console.log('jargon = ', textA.match('jargon'));
+console.log('jargon = ', textA.includes('jargon'));
+console.log('jargon = ', textA.search('jargon'));
+console.log('jargon = ', textA.indexOf('jargon'));
+console.log('jargon = ', textA.lastIndexOf('jargon'));
 
 
 // 7) Generate a random number between 0 and 100 inclusively.
@@ -198,26 +202,19 @@ console.log(endA);
 // 2) Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
 
 let patternA = /because/gi;
-console.log(sentence.match(patternA));
+let numberAv = sentence.match(patternA);
+let endAv = numberAv.length;
+console.log(endAv);
 
-// 3) Clean the following text and find the most frequent word(hint, use replace and regular expressions).
+// // 3) Clean the following text and find the most frequent word(hint, use replace and regular expressions).
 
-const sentenceB = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
-    // const elementA = ['%', '$', '@', '&', '#']
-const elementA = '%';
-const elementB = '$';
-const elementC = '@';
-const elementD = '&';
-const elementE = '#';
-const elementF = ';';
-const takeA = sentenceB.replaceAll(elementA, '');
-const takeB = takeA.replaceAll(elementB, '');
-const takeC = takeB.replaceAll(elementC, '');
-const takeD = takeC.replaceAll(elementD, '');
-const takeE = takeD.replaceAll(elementE, '');
-const takeF = takeE.replaceAll(elementF, '');
-
-console.log(takeF);
+// const sentenceB = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+// const elementA = /[%@$&#;]/gi;
+// const takeA = sentenceB.replaceAll(elementA, '');
+// const takeB = takeA.match(/\b\[a-zA-Z]+\1\b/gmi);
+//      // Vaqtinchalik qoldirildi ln oxiriga yetkazish kerak.
+// // console.log(takeA);
+// console.log(takeB);
 
 // 4) Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 let textC = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
