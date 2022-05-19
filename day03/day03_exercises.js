@@ -5,7 +5,7 @@ let lastName = "Khasanov";
 let country = "Uzbekiston";
 let city = "Urganch";
 let age = 25;
-let isMarried = 'Unmarried';
+let Married = 'Unmarried';
 let year = 2022;
 
 console.log('firstName = ', typeof firstName);
@@ -13,7 +13,7 @@ console.log('lastName = ', typeof lastName);
 console.log('country = ', typeof country);
 console.log('city = ', typeof city);
 console.log('age = ', typeof age);
-console.log('isMarried = ', typeof isMarried);
+console.log('isMarried = ', typeof Married);
 console.log('year = ', typeof year);
 
 // 2) Check if type of '10' is equal to 10

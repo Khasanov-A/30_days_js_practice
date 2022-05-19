@@ -170,12 +170,12 @@
 
     <script>
         function myFunction5() {
-            let testa = prompt("x1");
-            let testb = prompt("y1");
-            let testc = prompt("x2");
-            let testd = prompt("y2");
+            let value_x1 = prompt("x1");
+            let value_y1 = prompt("y1");
+            let value_x2 = prompt("x2");
+            let value_y2 = prompt("y2");
 
-            document.getElementById("demo5").innerHTML = 'm = (y2-y1)/(x2-x1) = ' + ((testd - testb) / (testc - testa));
+            document.getElementById("demo5").innerHTML = 'm = (y2-y1)/(x2-x1) = ' + ((value_y2 - value_y1) / (value_x2 - value_x1));
 
         }
     </script>
@@ -184,12 +184,12 @@
 
     <script>
         function myFunction6() {
-            let testa = prompt("x1");
-            let testb = prompt("y1");
-            let testc = prompt("x2");
-            let testd = prompt("y2");
-            let comparisonA = ((testd - testb) / (testc - testa))
-            let comparisonB = ((2 * testa) - 2)
+            let value_x1 = prompt("x1");
+            let value_y1 = prompt("y1");
+            let value_x2 = prompt("x2");
+            let value_y2 = prompt("y2");
+            let comparisonA = ((value_y2 - value_y1) / (value_x2 - value_x1))
+            let comparisonB = ((2 * value_x1) - 2)
 
             document.getElementById("demo6").innerHTML = comparisonA === comparisonB;
 
@@ -200,9 +200,9 @@
 
     <script>
         function myFunction7() {
-            let test = prompt("x");
+            let value_x = prompt("x");
 
-            document.getElementById("demo7").innerHTML = 'x = ' + test + '<br>' + 'y = x2 + 6x + 9 = ' + ((test ** 2) + (6 * test) + 9);
+            document.getElementById("demo7").innerHTML = 'x = ' + value_x + '<br>' + 'y = x2 + 6x + 9 = ' + ((value_x ** 2) + (6 * value_x) + 9);
 
         }
     </script>
@@ -211,10 +211,10 @@
 
     <script>
         function myFunction8() {
-            let testa = prompt("Enter hours:");
-            let testb = prompt("Enter rate per hour:");
+            let hours = prompt("Enter hours:");
+            let perhour = prompt("Enter rate per hour:");
 
-            document.getElementById("demo8").innerHTML = 'a = hours + rate per hour = ' + (testa * testb);
+            document.getElementById("demo8").innerHTML = 'a = hours + rate per hour = ' + (hours * perhour);
         }
     </script>
 
@@ -222,12 +222,12 @@
 
     <script>
         function myFunction9() {
-            let testa = prompt("Your name:");
-            let testb = testa.length;
+            let firstName = prompt("Your name:");
+            let firstNamelength = firstName.length;
             let long = 'Your name is long.';
             let short = 'Your name is short.';
 
-            if (testb >= 7) {
+            if (firstNamelength >= 7) {
                 document.getElementById("demo9").innerHTML = long;
             } else {
                 document.getElementById("demo9").innerHTML = short;
@@ -239,20 +239,17 @@
 
     <script>
         function myFunction10() {
-            let firstName = '';
-            let lastName = '';
-
-            let testa = prompt("Your first name:", firstName);
-            let testbb = prompt("Your last name:", lastName);
-            let testb = testa.length;
-            let testba = testbb.length;
+            let firstName = prompt("Your first name:", '');
+            let lastName = prompt("Your last name:", '');
+            let firstNamelength = firstName.length;
+            let lastNamelength = lastName.length;
             let long = 'Your first name';
             let short = 'Your last name';
 
-            if (testb > testba) {
-                document.getElementById("demo10").innerHTML = long + ' ' + testa + ' longer than ' + short + ' ' + testbb + '.';
+            if (firstNamelength > lastNamelength) {
+                document.getElementById("demo10").innerHTML = long + ' ' + firstName + ' longer than ' + short + ' ' + lastName + '.';
             } else {
-                document.getElementById("demo10").innerHTML = short + ' ' + testbb + ' longer than ' + long + ' ' + testa + '.';
+                document.getElementById("demo10").innerHTML = short + ' ' + lastName + ' longer than ' + long + ' ' + firstName + '.';
             }
         }
     </script>
@@ -261,22 +258,20 @@
 
     <script>
         function myFunction11() {
-            let myAge = '';
-            let yourAge = '';
 
-            let testa = prompt("My age:", myAge);
-            let testbb = prompt("Your friend's age:", yourAge);
-            let experimenta = testa - testbb;
-            let experimentb = testbb - testa;
-            let long = 'I am ';
-            let longa = 'you';
-            let short = "Your friend's age is ";
-            let shorta = "you";
+            let myAge = prompt("My age:", '');
+            let yourAge = prompt("Your friend's age:", '');
+            let experimenta = myAge - yourAge;
+            let experimentb = yourAge - myAge;
+            let sentenceA = 'I am ';
+            let sentenceB = 'you';
+            let sentenceC = "Your friend's age is ";
 
-            if (testa > testbb) {
-                document.getElementById("demo11").innerHTML = long + ' ' + experimenta + ' years older than ' + shorta + '.';
+
+            if (myAge > yourAge) {
+                document.getElementById("demo11").innerHTML = sentenceA + ' ' + experimenta + ' years older than ' + sentenceB + '.';
             } else {
-                document.getElementById("demo11").innerHTML = short + ' ' + experimentb + ' years older than ' + longa + '.';
+                document.getElementById("demo11").innerHTML = sentenceC + ' ' + experimentb + ' years older than ' + sentenceB + '.';
             }
         }
     </script>
@@ -304,17 +299,13 @@
     <script>
         function myFunction13() {
             let howManyYears = 'Shows how many years you have lived:'
-            let testa = prompt("Enter your birthday year:", ) * 1;
+            let myBirthdayYear = prompt("Enter your birthday year:", ) * 1;
             let now = new Date();
-            let seconds = 60;
-            let minutes = seconds;
-            let hours = minutes * 60;
-            let day = hours * 24;
-            let yearA = day * 365;
+            let oneYear = 60 * 60 * 24 * 365;
             let year = now.getFullYear();
-            let experimenta = year - testa;
+            let experimentA = year - myBirthdayYear;
 
-            document.getElementById("demo13").innerHTML = howManyYears + ' ' + experimenta + '<br>' + 'You lived ' + (yearA * experimenta) + ' seconds.';
+            document.getElementById("demo13").innerHTML = howManyYears + ' ' + experimentA + '<br>' + 'You lived ' + (oneYear * experimentA) + ' seconds.';
 
         }
     </script>
