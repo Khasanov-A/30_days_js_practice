@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day03</title>
+
+</head>
+
+<body>
+    <h1>Exercises: Level 2</h1>
+    <p>1) Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).</p>
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <p>2) Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)</p>
+    <button onclick="myFunction1()">Try it</button>
+
+    <p id="demo1"></p>
+
+    <p>3) Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))</p>
+    <button onclick="myFunction2()">Try it</button>
+
+    <p id="demo2"></p>
+
+    <p>4) Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.</p>
+    <button onclick="myFunction3()">Try it</button>
+
+    <p id="demo3"></p>
+
+    <p>5) Calculate the slope, x-intercept and y-intercept of y = 2x -2.</p>
+    <button onclick="myFunction4()">Try it</button>
+
+    <p id="demo4"></p>
+
+    <p>6) Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10).</p>
+    <button onclick="myFunction5()">Try it</button>
+
+    <p id="demo5"></p>
+
+    <p>7) Compare the slope of above two questions.</p>
+    <button onclick="myFunction6()">Try it</button>
+
+    <p id="demo6"></p>
+
+    <p>8) Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.</p>
+    <button onclick="myFunction7()">Try it</button>
+
+    <p id="demo7"></p>
+
+    <p>9) Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?</p>
+    <p> Enter hours: 40</p>
+    <p> Enter rate per hour: 28</p>
+    <p> Your weekly earning is 1120</p>
+
+    <button onclick="myFunction8()">Try it</button>
+
+    <p id="demo8"></p>
+
+    <p>10) If the length of your name is greater than 7 say, your name is long else say your name is short.</p>
+
+    <button onclick="myFunction9()">Try it</button>
+
+    <p id="demo9"></p>
+
+    <p>11) Compare your first name length and your family name length and you should get this output.</p>
+
+    <button onclick="myFunction10()">Try it</button>
+
+    <p id="demo10"></p>
+
+    <p>12) Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.</p>
+
+    <button onclick="myFunction11()">Try it</button>
+
+    <p id="demo11"></p>
+
+    <p>13) Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.</p>
+
+    <button onclick="myFunction12()">Try it</button>
+
+    <p id="demo12"></p>
+
+    <p>14) Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years</p>
+
+    <button onclick="myFunction13()">Try it</button>
+
+    <p id="demo13"></p>
+
+    <p>15) Create a human readable time format using the Date time object</p>
+
+    <button type="button" onclick="myFunction14()">Try it</button>
+
+    <p id="demo14"></p>
+    <p id="demo14.1"></p>
+    <p id="demo14.2"></p>
+
+    <h1>Exercises: Level 3</h1>
+    <p>1) Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )</p>
+
+    <button type="button" onclick="myFunction16()">Try it</button>
+
+    <p id="demo16"></p>
+
+    <!-- exercise 1 -->
+
+    <script>
+        function myFunction() {
+            let testa = prompt("Enter:", "");
+            let testb = prompt("Enter base:", "");
+            let testc = prompt("Enter height:", "");
+
+            document.getElementById("demo").innerHTML = "area = " + (testa * testb * testc);
+
+        }
+    </script>
+
+    <!-- exercise 2 -->
+
+    <script>
+        function myFunction1() {
+            let testa = prompt("Enter side a:") * 1;
+            let testb = prompt("Enter side b:") * 1;
+            let testc = prompt("Enter side c:") * 1;
+
+            document.getElementById("demo1").innerHTML = "perimeter = " + (testa + testb + testc);
+
+        }
+    </script>
+
+    <!-- exercise 3 -->
+
+    <script>
+        function myFunction2() {
+            let testa = prompt("length :") * 1;
+            let testb = prompt("width :") * 1;
+
+            document.getElementById("demo2").innerHTML = "perimeter = 2 x (length + width) = " + (2 * (testa + testb)) + '<br>' + "area = length x width = " + (testa * testb);
+
+        }
+    </script>
+
+    <!-- exercise 4 -->
+
+    <script>
+        function myFunction3() {
+            let testa = prompt("Pi :") * 1;
+            let testb = prompt("radiu :") * 1;
+
+            document.getElementById("demo3").innerHTML = "area = pi x r x r = " + (testa * testb * testb) + '<br>' + "c = 2 x pi x r = " + (2 * testa * testb);
+
+        }
+    </script>
+
+    <!-- exercise 5 -->
+
+    <script>
+        function myFunction4() {
+            let test = prompt("x") * 1;
+
+            document.getElementById("demo4").innerHTML = "x = " + test + "<br>" + "y = 2x - 2 = " + (2 * test - 2);
+
+        }
+    </script>
+
+    <!-- exercise 6 -->
+
+    <script>
+        function myFunction5() {
+            let testa = prompt("x1");
+            let testb = prompt("y1");
+            let testc = prompt("x2");
+            let testd = prompt("y2");
+
+            document.getElementById("demo5").innerHTML = 'm = (y2-y1)/(x2-x1) = ' + ((testd - testb) / (testc - testa));
+
+        }
+    </script>
+
+    <!-- exercise 7 -->
+
+    <script>
+        function myFunction6() {
+            let testa = prompt("x1");
+            let testb = prompt("y1");
+            let testc = prompt("x2");
+            let testd = prompt("y2");
+            let comparisonA = ((testd - testb) / (testc - testa))
+            let comparisonB = ((2 * testa) - 2)
+
+            document.getElementById("demo6").innerHTML = comparisonA === comparisonB;
+
+        }
+    </script>
+
+    <!-- exercise 8 -->
+
+    <script>
+        function myFunction7() {
+            let test = prompt("x");
+
+            document.getElementById("demo7").innerHTML = 'x = ' + test + '<br>' + 'y = x2 + 6x + 9 = ' + ((test ** 2) + (6 * test) + 9);
+
+        }
+    </script>
+
+    <!-- exercise 9 -->
+
+    <script>
+        function myFunction8() {
+            let testa = prompt("Enter hours:");
+            let testb = prompt("Enter rate per hour:");
+
+            document.getElementById("demo8").innerHTML = 'a = hours + rate per hour = ' + (testa * testb);
+        }
+    </script>
+
+    <!-- exercise 10 -->
+
+    <script>
+        function myFunction9() {
+            let testa = prompt("Your name:");
+            let testb = testa.length;
+            let long = 'Your name is long.';
+            let short = 'Your name is short.';
+
+            if (testb >= 7) {
+                document.getElementById("demo9").innerHTML = long;
+            } else {
+                document.getElementById("demo9").innerHTML = short;
+            }
+        }
+    </script>
+
+    <!-- exercise 11 -->
+
+    <script>
+        function myFunction10() {
+            let firstName = '';
+            let lastName = '';
+
+            let testa = prompt("Your first name:", firstName);
+            let testbb = prompt("Your last name:", lastName);
+            let testb = testa.length;
+            let testba = testbb.length;
+            let long = 'Your first name';
+            let short = 'Your last name';
+
+            if (testb > testba) {
+                document.getElementById("demo10").innerHTML = long + ' ' + testa + ' longer than ' + short + ' ' + testbb + '.';
+            } else {
+                document.getElementById("demo10").innerHTML = short + ' ' + testbb + ' longer than ' + long + ' ' + testa + '.';
+            }
+        }
+    </script>
+
+    <!-- exercise 12 -->
+
+    <script>
+        function myFunction11() {
+            let myAge = '';
+            let yourAge = '';
+
+            let testa = prompt("My age:", myAge);
+            let testbb = prompt("Your friend's age:", yourAge);
+            let experimenta = testa - testbb;
+            let experimentb = testbb - testa;
+            let long = 'I am ';
+            let longa = 'you';
+            let short = "Your friend's age is ";
+            let shorta = "you";
+
+            if (testa > testbb) {
+                document.getElementById("demo11").innerHTML = long + ' ' + experimenta + ' years older than ' + shorta + '.';
+            } else {
+                document.getElementById("demo11").innerHTML = short + ' ' + experimentb + ' years older than ' + longa + '.';
+            }
+        }
+    </script>
+
+    <!-- exercise 13 -->
+
+    <script>
+        function myFunction12() {
+            let testa = prompt("Enter your birthday year:", ) * 1;
+            let now = new Date();
+            let year = now.getFullYear();
+            let experimenta = year - testa;
+            let notEnoughYears = 18 - experimenta;
+
+            if (experimenta >= 18) {
+                document.getElementById("demo12").innerHTML = 'You are ' + experimenta + '.' + ' You are old enough to drive.';
+            } else {
+                document.getElementById("demo12").innerHTML = 'You are ' + experimenta + '.' + ' You will be allowed to drive after ' + notEnoughYears + ' years.';
+            }
+        }
+    </script>
+
+    <!-- exercise 14 -->
+
+    <script>
+        function myFunction13() {
+            let howManyYears = 'Shows how many years you have lived:'
+            let testa = prompt("Enter your birthday year:", ) * 1;
+            let now = new Date();
+            let seconds = 60;
+            let minutes = seconds;
+            let hours = minutes * 60;
+            let day = hours * 24;
+            let yearA = day * 365;
+            let year = now.getFullYear();
+            let experimenta = year - testa;
+
+            document.getElementById("demo13").innerHTML = howManyYears + ' ' + experimenta + '<br>' + 'You lived ' + (yearA * experimenta) + ' seconds.';
+
+        }
+    </script>
+
+    <!-- exercise 15 -->
+
+    <script>
+        function myFunction14() {
+            const now = new Date();
+            let year = now.getFullYear();
+            let month = now.getMonth();
+            let date = now.getDate();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+
+            document.getElementById("demo14").innerHTML = year + '-' + month + '-' + date + ' ' + hours + ':' + minutes;
+            document.getElementById("demo14.1").innerHTML = date + '-' + month + '-' + year + ' ' + hours + ':' + minutes;
+            document.getElementById("demo14.2").innerHTML = date + '/' + month + '/' + year + ' ' + hours + ':' + minutes;
+
+        }
+    </script>
+
+    <!--  LEVEL 3 exercise 1 -->
+
+    <script>
+        function myFunction16() {
+            const now = new Date();
+            let year = now.getFullYear();
+            let month = now.getMonth() + 1;
+            let date = now.getDate();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let zero = 0;
+
+            if (0 < hours && hours > 10 && 0 < minutes && minutes > 10 && 0 < month && month > 10) {
+                document.getElementById("demo16").innerHTML = year + '-' + zero + month + '-' + date + ' ' + zero + hours + ':' + zero + minutes;
+            } else {
+                document.getElementById("demo16").innerHTML = year + '-' + zero + month + '-' + date + ' ' + hours + ':' + minutes;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
